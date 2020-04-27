@@ -1,0 +1,19 @@
+h1{height: 100px; background: tomato;}
+.logo a{display: block; width: 200px; height: 100px; background: url(../images/lottelogow.png); background-size: contain; background-position: center; background-repeat: no-repeat; overflow: hidden; text-indent: -1000%; position: absolute; left: 50%; margin-left: -120px;}
+
+#content{width: 1200px; margin: 0 auto;}
+
+#col h2{font-size: 25px; text-align: center; padding: 150px 0 20px 0; font-weight: 400;}
+#col h3{font-size: 16px; text-align: center; padding-bottom: 50px; font-weight: 300;}
+
+#login_form{width: 800px; margin: 0 auto; height: 600px;}
+
+#login{width: 300px; margin: 0 auto; overflow: hidden;}
+#login #id_pw ul li{padding: 10px 17px}
+#login #id_pw ul li label{display: block; padding: 5px 0;}
+#login #id_pw ul li input{width: 250px; height: 21px; outline: none; padding: 2px 5px;}
+
+#login #login_button{width: 250px; padding: 5px; margin: 30px 0 0 19px; background: dimgray; display: block; text-decoration: none;}
+#login #login_button input{background: none; border: 0; color: #fff; font-size: 14px; width: 100%;}
+#login #join_button a{text-align: center; width: 250px; padding: 5px; margin: 30px 0 0 19px; font-size: 14px; color: #fff; background: dimgray; display: block; text-decoration: none;}
+

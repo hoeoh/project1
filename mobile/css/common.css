@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* 모바일 코딩 필수 공통영역 */
+* {
+ margin:0;
+ padding:0;
+ -webkit-text-size-adjust:none;
+ font-family: 'Gothic A1', sans-serif;}
+body {
+ color:#333;
+ font-size:14px;
+ font-family: 'Gothic A1', sans-serif; }
+img, fieldset { border:0; vertical-align:top }
+ul, ol, li, dl { list-style:none; }
+h1, h2, h3, h4, h5, h6 {
+ font-size:100%;
+ font-weight:normal; }
+hr { display:none; }
+a { color:inherit; }
+a, a:link {
+ color:#333;
+ text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {
+ color:#333;
+ text-decoration:none; }
+em, i, address {
+ font-style:normal;
+ font-weight:normal; }
+legend, caption {
+ display:none;
+ clear:both; }
+input, textarea, select, button, table {
+ font-size:inherit;
+ font-family:inherit;
+ line-height:inherit; }
+section, nav, article, aside, hgroup, header, footer { display:block }
+textarea, input {
+ border-radius:1px;
+ -webkit-apprearance:none; }
+textarea { resize:none; }
+label { cursor:pointer; }
+
+.hidden{display: block; text-indent: -1000%; top: 0; width: 1px; height: 1px; overflow: hidden; color: transparent;} 
+ #skipNav{position:relative; width:100%; overflow:hidden;}
+        #skipNav a{display:block; height:1px; margin-bottom:-1px; overflow:hidden; text-align:center; text-decoration:none; color:#fff; font-size:12px;}
+
+#wrap{ width:100%; overflow: hidden;}
+
+/* 모든 페이지 공통 영역 - 헤더영역*/
+ #headerArea{width: 100%; height: 60px; position: fixed; z-index: 20; top: 0;}
+
+.gnb_logo{display: block; border-bottom: 1px solid tomato;}
+#gnb span img{width: 40%; padding: 20px 0 20px 20px; opacity: .6;}
+.logo{position: fixed; top: 0; width: 100%;}
+.logo a{display: block; width: 120px; height: 60px; background-image: url(../images/logo.png); background-size: 100%; margin: 0 auto; background-position: center; background-repeat: no-repeat;}
+
+.scroll{background-color: #333;}
+
+.logo{float:left;}
+.btn{float:right; display:block; color: #fff !important; position: relative; z-index: 10; right: 10px; top: 15px;}
+
+
+#wrap{width:100%; overflow:hidden}
+.box{width:100%; height:100%; background:#000; opacity:0.7;
+     position:absolute; left:0; top:0; z-index:10; display:none}
+
+#nav{clear:both; width:80%; position:absolute; right:-100%; top:0;
+         background:#fff; opacity:0; z-index:20}
+
+#nav nav .mclose{position:absolute; right: 10px; top: 22px; color: #aaa;}
+.fas{font-weight: 600 !important; font-size: 30px;}
+#nav li{border-top:1px solid #FFF; 
+            font-weight:bold;}
+#nav li a{display: block; padding: 15px 0 15px 60px; font-weight: 500; font-size: 14px;}
+#nav .first{padding-top: 30px !important;}
+#nav li ul{background:#fff; display: none}
+
+#nav .last{border-bottom:1px solid #FFF}
+
+.depth1 ul li{background-color: #eee;}
+.depth1 ul li a{font-weight: 300 !important; padding: 15px 0 15px 70px !important;}
+.depth1 a span{display: block; float: right;}
+.depth1 a span i{font-size: 13px !important; color: #aaa; margin-right: 13px; padding: 0;}
+
+.click{color: tomato !important;}
+
+
+/* 모든 페이지 공통 영역 - 푸터영역*/
+#footerArea{position: relative; z-index: 1; background-color: #333; width: 100%; margin-top: 50px;}
+#footerArea .sitemap{top: 0; width: 80%; margin: 0 auto; height: 40px; text-align: center;}
+#footerArea .sitemap li{float: left; padding: 3px; line-height: 34px;}
+#footerArea .sitemap li a{color: #fff; font-size: 12px; text-align: center;}
+#footerArea span{display: block; width: 100%; height: 1px; background-color: #fff;}
+
+#footerArea .info {width: 80%; margin: 0 auto; padding: 50px 0;}
+#footerArea .info li{color: #fff; font-size: 13px; line-height: 20px;}
+
+#footerArea .pc{position: absolute; z-index: 3; color: #fff; border: 1px solid #fff; display: block; width: 60px; text-align: center; height: 20px; line-height: 20px; font-size: 10px; bottom: 60px; right: 20px;}
+#footerArea .pc i{font-size: 11px !important;}
+
+#footerArea p{width: 80%; margin: 0 auto; color: #fff; line-height: 40px; font-size: 12px;}
+
+@media screen and (max-width:480px){
+    #wrap{
+        min-width: 320px;
+    }
+}
+
+
+/* 모든 페이지 공통 영역 - 비주얼영역*/
+.visual{width: 100%; position: relative; top: 0; overflow: hidden;}
+.visual span{display: block; width: 100%; height: 1000px; background-color: rgba(100,100,100,.4); position: absolute; top: 0;}
+.visual span p:nth-of-type(1){font-family: 'Sedgwick Ave', cursive; font-size: 25px; padding: 30% 0 0 10%;}
+.visual span p{color: #fff; padding: 5% 0 0 10%; font-size: 11px;}
+.visual img{width: 100%;}
+
+/* 모든 페이지 공통 영역 - 로케이션영역*/
+.location{height: 50px; padding: 3% 10%;}
+.location ul li{float: left; padding-left: 16px; font-size: 13px;}
+.location a{text-decoration: none; color: #fff}
+.location .first{margin-left: 0; padding-left: 0; background: none;}
+
+/*top 버튼*/
+article .top{display: block; width: 40px; height: 40px; border-radius: 50%; background-color: #333; position: fixed; bottom: 80px; right: 20px;}
+article .top a{display: block; width: 100%; height: 100%; color: #fff; line-height: 40px; text-align: center;}
+
+/* 모든 페이지 공통 영역 - 상단영역*/
+.content1 p:nth-of-type(1){font-weight: 600; padding: 50px 20px 30px 20px; font-size: 16px; color: #333;}
+.content1 p{padding: 0 30px 50px 30px; color: #666; font-weight: 300; text-align: center;}
+
+
+
+
+
+
+

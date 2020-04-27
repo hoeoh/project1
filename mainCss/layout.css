@@ -1,0 +1,18 @@
+
+/*--------------------------------------------------------------------------------------헤더*/
+header{width: 100%; height: 150px; position: fixed; z-index: 10; background: rgba(50,50,50,.4);}
+header span{width: 100%; height: 1px; display: block; background-color: #fff;}
+
+.logo a{display: block; width: 200px; height: 150px; margin-top: 30px; background: url(../images/lottelogow.png); background-size: contain; background-position: center; background-repeat: no-repeat; overflow: hidden; text-indent: -1000%; margin: 0 auto;}
+
+#gnb{overflow: hidden; height: 40px; width: 100%; transition-duration: 0.5s;}
+#gnb a{text-decoration: none; color: #fff; line-height: 40px; font-weight: 300;}
+
+.menu{width: 1020px; height: 40px; margin: 0 auto; position: absolute; left: 50%; margin-left: -510px; overflow: hidden; margin-top: 20px; transition-duration: 0.5s;}
+.menu> li{width: 170px; float: left; text-align: center; position: relative;}
+
+.depth2 a{font-weight: 200 !important; font-size: 16px;}
+
+#gnb:hover{height: 400px; background-color: rgba(50,50,50,.4);}
+.menu:hover{height: 400px;}
+h3> a:hover{color: tomato !important;}

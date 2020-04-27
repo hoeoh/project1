@@ -1,0 +1,19 @@
+/*------------------------------------------------------------------비주얼*/
+
+.content1 ul{background-color: #ddd; overflow: hidden; padding: 30px 20px;}
+.content1 ul li{float: left; width: 25%; text-align: center; position: relative;}
+.content1 ul li:nth-of-type(1)::after{display: none}
+.content1 ul li::after{border-right: 1px solid #fff; content: ""; display: block; height: 20px; position: absolute; top: 30%}
+.content1 ul li span{display: block; padding: 3px;}
+.content1 ul li span:nth-of-type(1){font-size: 12px;}
+
+.content2 h3{font-family: 'Sedgwick Ave'; font-size: 25px; padding: 50px 30px; margin-top: 35px;}
+.cinema li span{display: block; width: 200px; height: 200px; border-radius: 50%; background-color: rgba(0,0,0,0.3); overflow: hidden; margin: 0 auto;}
+.cinema li span::before{background-image: url(../images/bus1.jpg); background-size: 150%; background-position: center; background-repeat: no-repeat; content: ""; display: block; height: 100%;}
+.cinema li:nth-of-type(1) span::before{background-size: 100%;}
+.cinema li:nth-of-type(2) span::before{background-image: url(../images/ban2.jpg); content: "";}
+.cinema li:nth-of-type(3) span::before{background-image: url(../images/andding.jpg); content: "";}
+.cinema li:nth-of-type(4) span::before{background-image: url(../images/vision.jpg); content: "";}
+.cinema p{text-align: center; padding: 50px 40px 0;}
+.cinema p:last-of-type{text-align: center; padding: 50px 40px 50px;}
+

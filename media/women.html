@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Miu Miu - Women`s Tale</title>
+<link rel="shortcut icon"  type="image/x-icon"  href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/women.css">
+<link rel="stylesheet" href="css/movieClip2.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<!--<script src="js/prefixfree.min.js"></script>-->
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/women.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+
+<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+	    	    setTimeout(scrollTo, 0, 0, 1); 
+	    	}, false);
+		} catch(e) {}
+	// ]]>
+    
+        window.onload = function(){
+		var swiper = new Swiper('.swiper-container', {
+					 pagination: '.swiper-pagination',
+					 paginationType: 'progress',
+					 slidesPerView: 'auto',
+					 paginationClickable: true,
+					 spaceBetween: 0,
+					 freeMode: true,
+					 nextButton: '.next',
+					 prevButton: '.back'
+		 });
+	};
+        $(document).ready(function() {
+            $('.popup-youtube').magnificPopup({
+                disableOn: 320,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: true,
+
+                fixedContentPos: false
+            });
+        });    
+    
+
+</script>
+<!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <!--skip nav 영역-->
+  
+   <div id="wrap">
+       <img class="bg pcImg" src="images/tale/bg.jpg" alt="">
+       <img class="bg subImg" src="images/tale/slate.jpg" alt="">
+
+   <!-----------------------------------------헤더-->
+   <? include "common/header.html" ?>
+	
+	<article id="content">
+       <h2 class="hidden">본문영역</h2>
+       <section class="clip_part">
+            <h3>Women`s Tale</h3>
+            <p><b class="chonburi">Miu Miu and the world of women:</b><br>a series of short films directed by important international directors<br>who reveal and explore the vanity and femininity of the 21st century from an insightful perspective.</p>
+            <div class="contentArea">
+               <h4 class="hidden">#18 Brigitte</h4>
+                <div class="imgPart">
+                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=kW2yPrKFw1E">
+                    <img src="images/tale/1.jpg" alt="Brigitte">
+                    <p style>Women`s Tale #18<br>Brigitte</p>
+                    <div class="playBtn">Play</div>
+                    </a>
+                </div>
+                <strong>by Lynne Ramsay</strong><br><br>
+                <p>“I hate having my photo taken. Brigitte was the first person who captured me,” admits Lynne. “She cast a magic spell. I wondered, ‘how did she do that?’” Originally trained as a stills photographer herself, Lynne says that when it comes to the documentary form, <b>“I’ve never done anything like this before.”</b></p>
+            </div>
+            
+            <div class="clip">
+              <div class="clip_part">
+                    <h4 class="subTitle">#19 Night Walk</h4>
+                    <div class="contentArea">
+                        <div class="imgPart">
+                            <div class="imgPart">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=9-aNR_3ZbgI">
+                                <img src="images/tale/p19.jpg" alt="Night Walk">
+<!--                                <p style>Women`s Tale #17<br>Shako Mako</p>-->
+                                <div class="playBtn">Play</div>
+                                </a>
+                            </div>
+                        </div>
+                        <strong>by Małgorzata Szumowska</strong><br><br>
+                        <p>“you can use fashion to do something important, that supports women, and promotes tolerance.” </p>
+                    </div>
+               </div> 
+        
+    
+          
+               <div class="clip_part">
+                    <h4 class="subTitle">#17 Shako Mako</h4>
+                    <div class="contentArea">
+                        <div class="imgPart">
+                            <div class="imgPart">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=YJk9HnWjnwI">
+                                <img src="images/tale/p17.jpg" alt="Shako Mako">
+<!--                                <p style>Women`s Tale #17<br>Shako Mako</p>-->
+                                <div class="playBtn">Play</div>
+                                </a>
+                            </div>
+                        </div>
+                        <strong>by Hailey Gates</strong><br><br>
+                        <p>“Farah” looks around aghast and wailing. But nothing here is quite what it seems.</p>
+                    </div>
+                </div>                   
+            </div>
+       </section>
+        
+	</article>
+	
+	<!-----------------------------------------푸터-->
+    <? include "common/footer.html" ?>
+</div>
+
+		<script>
+            $(document).ready(function() {
+                var boxHeight2 =  $('.runwayP li:eq(1)').outerHeight();
+
+                for(var i=0; i<3; i++){
+                            $(".runwayP li:eq("+ i +")").css('height',boxHeight2);
+                }
+
+            $(window).resize(function(){ 
+                $('.runwayP li:nth-of-type(2)').css('height','auto');  
+            boxHeight2 =  $('.runwayP li:eq(1)').outerHeight();
+
+                for(var i=0; i<6; i++){
+                            $(".runwayP li:eq("+ i +")").css('height',boxHeight2);
+                }
+
+            });
+                
+                });
+                
+            
+            
+        </script>		
+</body>
+</html>

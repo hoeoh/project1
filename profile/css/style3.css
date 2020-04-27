@@ -1,0 +1,438 @@
+ #actions{
+        position:fixed;
+        top: 73px;
+        left: 30px;
+        z-index: 99999;
+    }
+    #actions a{
+        background: rgba(0,0,0,0.8);
+        padding: 7px;
+        margin: 2px;
+        color: #ccc;
+        display: inline-block;
+    }
+    #actions a:hover{
+        color: #fff;
+        background: #81A140;
+    }
+.hidden{display: block; position: absolute; width: 1px; height: 1px; overflow: hidden; color: #fff; top: 0; left: -1000%}
+h1{position: absolute;
+    top: 5px;
+    z-index: 12;
+    left: 60px;
+}
+h1 a{display: block; text-indent: -9999px;overflow: hidden; background: url(../img/minLogo.png) no-repeat; width: 310px; height: 71px}
+h1 img{width: 310px;}
+.menuOpen{ 
+    position:absolute; 
+    right:20px; 
+    color: #fff ! important; 
+    font-size: 2em; 
+    display: none 
+}
+#menu{
+	position: fixed;
+    right: 20px;
+    z-index: 70;
+    -webkit-font-smoothing: antialiased;
+    -moz-font-smoothing: antialiased;
+    letter-spacing: 1px;
+    font-size: 1.1em;
+}
+
+#menu li {
+    display: inline-block;
+    margin: 10px 0;
+    position: relative;
+}
+.main-text {
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 36px;
+    color: #fff;
+    text-align: left;
+    margin-left: 26%;
+    line-height: 2em;
+    writing-mode:tb-rl;
+    font-weight: 100;
+}
+/*
+header{ position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 180px;
+    background: rgba(0, 0, 0, .9);
+    left: 0;
+    top: 0;}
+*/
+
+/*home*/
+.container-fluid {
+     padding-right: 0; 
+     padding-left: 0; }
+#section0 .homeWrap{}
+#section0 .homeWrap .homeText{margin-top: 10%; }
+#section0 .homeWrap .homeText .name{
+    margin-left: 10%;
+    text-align: left;
+}
+#section0 .homeWrap .homeText h2{
+    font-size: 85px; 
+    color: #404a5f; 
+    font-weight: bold;
+    letter-spacing: -6px;
+    word-spacing: -6px;
+}
+#section0 .homeWrap .homeText img{width: 80%; margin: 0 10%}
+#section0 .homeWrap .homeText .name p{font-size: 40px; color: #c2b1a9; margin-bottom: 11%; letter-spacing: -2px}
+#section0 .homeWrap .homeText>p{font-size: 15px; color: #c2b1a9; width: 80%; text-align: justify;margin: 0 10% 6% 10%;  line-height: 1.6em}
+#section0 .homeWrap .faceWrap{background: url(../img/face3.jpg);
+background-size: auto; height: 100vh; 
+background-position: center;
+
+
+}
+#section0 img{}
+
+
+/*profile*/
+#slide1{ }
+#section1{background-size: cover; background: url(../img/white_texure.jpg); background-position: center}
+#section1 .profileWrap{
+    width: 60%;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 612px;
+    position: relative;
+    box-shadow: 8px 8px 12px -2px rgba(0,0,0,.6);
+    background: rgba(255,255,255,.4);
+    border-top-right-radius: 100px;
+}
+
+#section1 .profileWrap .profileText{ 
+    float: left;
+    text-align: left;
+    margin-top: 12%;
+    margin-left: 10%;
+    width: 55%;
+    display: block; 
+    color: #666; 
+    font-family: 'Gothic A1', serif; 
+    text-align: left;
+    padding: 8px 0;
+
+}
+
+
+
+
+#section1 .profileText h2{
+    color: #666;
+    font-size: 50px; 
+    font-family: 'Gothic A1', serif; 
+    text-indent: -15px;
+    margin-bottom: 2%;
+    font-weight: 200;
+    margin-right: 5%;
+    float: left;
+}
+
+#section1 .profileText span.eName{
+    display: block; 
+    font-family: 'Gothic A1', serif; 
+    font-size: 20px;
+    text-transform: uppercase; 
+    font-weight: 100;
+    margin: 5% 5% 10% 0;
+}
+
+#section1 .profileText dl{
+    font-size: 20px;
+    margin-bottom: 5%;
+}
+#section1 .profileText dl dt{
+    font-weight: 500;
+}
+#section1 .profileText dl dd{
+    font-weight: 100;
+}
+
+#section1 .profileText dl:nth-of-type(1) dt{
+    float: left;    margin-bottom: 1%;
+   }
+#section1 .profileText dl:nth-of-type(1) dd{
+    margin-left: 104px; margin-bottom: 1%;}
+#section1 .profileText dl:nth-of-type(2) dt{
+   margin-bottom: 2%
+   }
+#section1 .profileText dl:nth-of-type(3) dt{
+ margin-bottom:2%
+   }
+
+
+
+#section1 .profileImgWrap{width: 40%; float: right}
+
+#section1 .profileWrap .downPort{
+    width: 25%; 
+    height: 30px; 
+    background: rosybrown; 
+    border-radius: 150px;    
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+#section1 .profileWrap .downPort a{display: block; font-weight: bold; color: #fff; margin-top: 2%; font-size: 15px}
+
+
+#section1 .profileWrap img{   
+    width: 25%;
+    
+    position: absolute;
+    right: 5%;
+    top: 9%;}
+
+
+
+
+.fp-controlArrow.fp-next {
+    right: 60px !important;}
+.fp-controlArrow.fp-prev {
+    left: 60px; !important;
+    
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span {
+    
+    background: #fff !important;}
+
+
+/*pcweb*/
+/*.section{min-width: 1400px};*/
+
+.section .wrap{
+    position: relative;    
+    width: 42%;
+    float: right;
+    margin-right: 6%;
+    margin-top: 5%;
+    z-index: 5;
+    height: 541.73px;
+    overflow: hidden;
+}
+.section .pcWrap img{
+    width: 90%;
+}
+.section .wrap .responsivePad img{
+    width: 60%;
+    position: absolute;
+    left: 35%;
+    z-index: 2;
+    bottom: 10%;
+}
+.section .wrap .responsivePc img:nth-of-type(1){
+    position: absolute;
+    left: -1%;
+    bottom: 12%;
+    z-index: 1;
+    width: 70%;
+}
+.section .wrap .responsivePc img:nth-of-type(2){
+    position: absolute;
+    left: 90%;
+    top: 38%;
+    z-index: 3;
+    width: 20%;
+}
+
+
+.section .mobileWrap img{
+    position: absolute;
+    width: 40%;
+    left: 30%;
+}
+.section .wpWrap img{
+    width: 90% !important;
+    margin-top: 10%;
+}
+
+.section .wrap img:nth-of-type(2){position: absolute;
+    width: 85%;
+    left: 50%;
+    top: 4%;
+    transform: translateX(-50%); }
+
+.section .text{
+    width:50%; 
+    float: left; 
+    position: relative; 
+    margin-top: 5%;
+    overflow: hidden
+}
+
+
+.section .text h2{
+    font-size: 50px;
+    color: #fff;
+    text-align: left;
+    margin-left: 17%;
+    margin-bottom: 3%;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    word-spacing: -3px;
+    letter-spacing: -2px;
+}
+.section .text p{font-size: 18px;
+    color: #fff;
+    text-align: left;
+    margin-left: 17%;
+}
+.section .text p:after{    
+    content: "";
+    position: absolute;
+    right: 17%;
+    width:95%;
+    height: 1px;
+    background: #fff;
+    bottom: 50%;
+}
+.section .grayText p:after{    
+    background: #666;
+}
+.section .pcText p:after{    
+    bottom: 44%;
+}
+.section .wpText p:after{    
+    bottom: 46%;
+}
+.section .text .timeSkill{    
+    color: #fff;
+    text-align: left;
+    margin-left: 18%;
+    margin-top: 11%;}
+
+.section .text .skill dl{margin-bottom: 3%}
+.section .text .skill dl dt{
+    font-weight: bold; 
+    margin-bottom: 2%;
+    font-size: 18px;
+}
+.section .text .skill dl dd{margin-bottom: 0.5%}
+
+.section .grayText h2, .section .grayText p, .section .text .graySkill{
+    color: #666;
+}
+
+.section .text .site{    
+    position: absolute;
+    background: #fff;
+    width: 220px;
+    border-radius: 50px;
+    height: 30px;
+    top: 47.5%;
+    right: 17%;
+}
+.section .grayText .site{    
+    background: #666;
+}
+.section .text .pcSite{    
+    top: 53%;
+}
+.section .text .wpSite{    
+    top: 51.5%;
+}
+.section .text .site a{
+    color: #666; 
+    display: block; 
+    text-transform: uppercase;
+    margin-top: 2%;
+    font-weight: bold;
+}
+.section .grayText .site a{    
+    color: #fff;
+}
+.section .QRMobile{
+    width: fit-content;
+    position: absolute;
+    right: 5%;
+    bottom: 15%;
+    z-index: 30;
+}
+.section .QRMobile img{
+    width: 50%;
+    border: 1px solid;
+}
+
+@media screen and (max-width:1280px) {
+    #section3 .mobileWrap img:nth-of-type(2) {width: 39%;}
+    #section3 .mobileWrap img:nth-of-type(1) { width: 45%;}
+    #section4 .responsivePad { margin-top: 16%;}
+      #section4 .responsivePad img:nth-of-type(2) {width: 55%;}
+    #section4 .responsivePad img:nth-of-type(1) {width: 61%;}
+    #section5 .bootstrapWrap {margin-top: 12%;}
+    .section .text .timeSkill{margin-left: 6%;}
+    .section .wrap {margin-top: 12%;}
+    #section5 .bootstrapText .timeSkill {
+        margin-left: -74px;padding-right: 9%;}
+    #section1 .profileWrap .downPort {
+        width: 43%;}
+
+    
+}
+@media screen and (max-width:1024px) {
+    #section0 .homeWrap .homeText {
+    margin-top: 18%;}
+    #section0 .homeWrap .homeText h2 {
+        font-size: 47px;letter-spacing: 0}
+    #section0 .homeWrap .homeText .name p {
+        font-size: 25px;}
+    .menuOpen{ display:block; margin-top: 20px; z-index: 10}
+    
+    header #menu{
+    display: none;     
+    overflow: hidden;
+    top: 100px;
+    background: rgba(0,0,0,.5);
+}
+    
+    header #menu li{
+        display: block; 
+        margin-left: 0;
+        text-align: right; 
+        width: auto; 
+        padding: 2.5% 
+    }
+    .section .text .timeSkill {
+    margin-left: 1%;
+    padding-right: 16%;
+    }
+    .section .text h2 {
+        font-size: 39px;}
+    .section .text p {
+        font-size: 15px;}
+    .section .wrap {
+    margin-top: 24%;}
+
+    .section .wrap img:nth-of-type(1) {
+    width: 97%;}
+     .section .wrap img:nth-of-type(1) {
+    width: 92%;}
+
+  
+}
+@media screen and (max-width:768px) {
+    
+    
+    h1 {
+   
+     top: 0; left: 30px;
+}
+    h1 img {
+        width: 250px;}
+    
+/*
+    #section0 .faceWrap{margin-right:0; padding-top: 0; width: 50%}
+#section0 img{width: 65%; height: auto;
+    }
+*/
+
+    
+}

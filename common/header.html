@@ -1,0 +1,61 @@
+<header>
+      <div class="topLogin">
+          <div>
+           <?
+                if(!$userid) //로그인이 되지 않은 상태
+                {
+            ?>
+                      <a href="../login/login_form.php">로그인</a> 
+                      <a href="../member/member_check.html">회원가입</a>
+            <?
+                }
+                else //로그인이 된 상태
+                {
+            ?>
+    <!--                <?=$usernick?> (level:<?=$userlevel?>) | -->
+                    <a href="./login/logout.php">로그아웃</a>
+                    <a href="./login/member_form_modify.php">정보수정</a>
+            <?
+                }
+            ?>
+            </div>
+        </div>
+       <h1 class="logo"><a href="../index.html">롯데컬쳐웍스</a></h1>
+       <span></span>
+        <nav id="gnb">
+         <h2 class="hidden">네비영역</h2>
+            <ul class="menu">
+                <li><h3><a href="#">회사소개</a></h3>
+                    <ul class="depth2">
+                        <li><a href="#">회사개요</a></li>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">지배구조</a></li>
+                        <li><a href="#">수상실적</a></li>
+                        <li><a href="../sub1/sub1.html">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><h3><a href="#">사업분야</a></h3>
+                    <ul class="depth2">
+                        <li><a href="#">롯데시네마</a></li>
+                        <li><a href="#">롯데엔터테인먼트</a></li>
+                    </ul></li>
+                <li><h3><a href="#">사회공헌</a></h3>
+                    <ul class="depth2">
+                        <li><a href="#">행복한 나눔</a></li>
+                        <li><a href="#">나눔현장</a></li>
+                    </ul>
+                </li>
+                <li><h3><a href="#">홍보센터</a></h3></li>
+                <li><h3><a href="#">광고/임대문의</a></h3></li>
+                <li><h3><a href="#">인재채용</a></h3>
+                    <ul class="depth2">
+                        <li><a href="#">채용안내</a></li>
+                        <li><a href="#">채용공고</a></li>
+                        <li><a href="#">합격자발표</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        
+</header>

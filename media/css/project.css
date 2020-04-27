@@ -1,0 +1,137 @@
+#content .h3{text-align: center; color: #fff; font-size: 40px; padding: 180px 0 30px 0; position: relative;}
+#content .p{color: #fff; position: relative; text-align: center; padding-bottom: 80px; font-family: gothic A1; font-size: 20px; width: 70%; left: 50%; margin-left: -35%;}
+
+.post-module {
+  position: relative;
+  z-index: 1;
+  display: block;
+  min-width: 270px;
+  overflow: hidden;
+  border-top-right-radius: 25%;    
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.post-module:hover,
+.hover {
+  -webkit-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 1px 35px 0px rgba(0, 0, 0, 0.3);
+}
+.post-module:hover .thumbnail img,
+.hover .thumbnail img {
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  transform: scale(1.1);
+  opacity: 0.6;
+}
+.post-module .thumbnail {
+  overflow: hidden;
+  border-top-right-radius: 25%;
+}
+.post-module .thumbnail img {
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.3s linear 0s;
+  -moz-transition: all 0.3s linear 0s;
+  -ms-transition: all 0.3s linear 0s;
+  -o-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+}
+.post-module .post-content {
+  position: absolute;
+  bottom: -100%;
+  background: #FFFFFF;
+  width: 100%;
+  padding: 30px;
+  -webkti-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+  -moz-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+  -ms-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+  -o-transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+  transition: all 0.3s cubic-bezier(0.37, 0.75, 0.61, 1.05) 0s;
+}
+.post-module .post-content .category {
+  position: absolute;
+  top: -34px;
+  left: 0;
+  background: #ad0016;
+  padding: 10px 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  display: none;
+}
+.post-module .post-content .title {
+  margin: 0;
+  padding: 0 0 10px;
+  color: #ad0016;
+  font-size: 26px;
+  font-weight: 700;
+}
+.post-module .post-content .sub_title {
+  margin: 0;
+  color: #333333;
+  font-family: gothic A1;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+.container:before,
+.container:after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.container .column {
+  width: 33.33%;
+  padding: 25px;
+  -webkti-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+}
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+	
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    #content .h3{font-size: 30px;}
+    #content .p{font-size: 16px;}
+    .container .column{width: 50%;}
+    .post-module .post-content .title{font-size: 23px;}
+    .post-module .post-content .sub_title{font-size: 14px}
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #content .h3{font-size: 25px;}
+    #content .p{font-size: 14px;}
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+    .container .column{width: 100%;}
+}

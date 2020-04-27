@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>Miu Miu - Project</title>
+<link rel="shortcut icon"  type="image/x-icon"  href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link href="https://fonts.googleapis.com/css2?family=Chonburi&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/project.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+
+<!--<script src="js/prefixfree.min.js"></script>-->
+<script src="js/jquery-1.12.4.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/common.js"></script>
+<script src="js/layout.js"></script>
+<script src="js/project.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+
+
+<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+	    	    setTimeout(scrollTo, 0, 0, 1); 
+	    	}, false);
+		} catch(e) {}
+	// ]]>
+    
+        $(document).ready(function() {
+            $('.popup-youtube').magnificPopup({
+                disableOn: 320,
+                type: 'iframe',
+                mainClass: 'mfp-fade',
+                removalDelay: 160,
+                preloader: true,
+
+                fixedContentPos: false
+            });
+        });  
+    
+</script>
+<!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+  <!--skip nav 영역-->
+  
+   <div id="wrap">
+       <img class="bg pcImg" src="images/project/bg.jpg" alt="">
+       <img class="bg subImg" src="images/project/bg2.jpg" alt="">
+
+   <!-----------------------------------------헤더-->
+   <? include "common/header.html" ?>
+	
+	<article id="content">
+       <h2 class="hidden">본문영역</h2>
+       <h3 class="h3">Project</h3>
+       <p class="p">A collection of special projects, capsule collections and limited editions.</p>
+       
+<div class="container">
+  <div class="column">
+    <div class="post-module">
+      <div class="thumbnail">
+        <img src="images/project/b.jpg" alt="">
+      </div>
+      <div class="post-content">
+        <div class="category">Special Project</div>
+        <p class="title">MIU-zine SS20</p>
+        <p class="sub_title">Four photographers, four original points of view on the Spring Summer 2020 collection.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="post-module">
+      <div class="thumbnail">
+        <img src="images/project/b1.jpg" alt="">
+      </div>
+      <div class="post-content">
+        <div class="category">Special Project</div>
+        <p class="title">Miu Miu Kisses</p>
+        <p class="sub_title">Miu Miu Kisses runs the gamut from mischievous to playful and from nostalgic to tender.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="post-module">
+      <div class="thumbnail">
+        <img src="images/project/b2.jpg" alt="">
+      </div>
+      <div class="post-content">
+        <div class="category">Special Project</div>
+        <p class="title">M/MARBLES STOOL</p>
+        <p class="sub_title">Introducing the Miu Miu M/Marbles Stool,
+Art Basel Miami, 2019</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="post-module">
+      <div class="thumbnail">
+        <img src="images/project/b3.jpg" alt="">
+      </div>
+      <div class="post-content">
+        <div class="category">Special Project</div>
+        <p class="title">The Holiday Sprit</p>
+        <p class="sub_title">These Holiday portraits are enigmatic, elegant &amp; subtle. They represent the nonchalant allure of the Miu Miu Holiday spirit.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="post-module">
+      <div class="thumbnail">
+        <img src="images/project/b_21.jpg" alt="">
+      </div>
+      <div class="post-content">
+        <div class="category">Special Project</div>
+        <p class="title">LA PISCINE</p>
+        <p class="sub_title">With summertime approaching, it is natural to fantasize of those seemingly endless days basking in the glow of the sun at the edge of a swimming pool.</p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="post-module">
+      <div class="thumbnail">
+        <img src="images/project/b5.jpg" alt="">
+      </div>
+      <div class="post-content">
+        <div class="category">Special Project</div>
+        <p class="title">Head in the Clouds</p>
+        <p class="sub_title">Miu Miu Eyewear presents Head In The Clouds, a film that revolves around the female gaze, daydreaming and the Miu Miu Cloud - the latest addition to the brand’s iconic eyewear collection.</p>
+      </div>
+    </div>
+  </div>
+  
+</div>
+       
+        
+	</article>
+	
+	<!-----------------------------------------푸터-->
+    <? include "common/footer.html" ?>
+</div>
+
+		<script>
+            $(document).ready(function() {
+                var boxHeight2 =  $('.runwayP li:eq(1)').outerHeight();
+
+                for(var i=0; i<3; i++){
+                            $(".runwayP li:eq("+ i +")").css('height',boxHeight2);
+                }
+
+            $(window).resize(function(){ 
+                $('.runwayP li:nth-of-type(2)').css('height','auto');  
+            boxHeight2 =  $('.runwayP li:eq(1)').outerHeight();
+
+                for(var i=0; i<6; i++){
+                            $(".runwayP li:eq("+ i +")").css('height',boxHeight2);
+                }
+
+            });
+                
+                });
+                
+            
+            
+        </script>		
+</body>
+</html>

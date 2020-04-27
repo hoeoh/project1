@@ -1,0 +1,8 @@
+.content1 p{padding: 0 30px 50px 30px !important; color: #666 !important; font-weight: 300 !important; text-align: center;}
+
+.content1 h3{padding: 50px 0 30px 0; font-size: 16px; font-weight: 600; text-align: center;}
+.content1 #map{left: 50%; margin-left: -45%;}
+.content1 dl{padding: 50px;}
+.content1 dl dt{padding: 20px 0;}
+.content1 dl dt:nth-of-type(2){padding: 50px 0 20px 0;}
+.content1 dl dd{padding: 10px 0 10px 50px; font-size: 13px; border-bottom: 1px solid #ddd;}

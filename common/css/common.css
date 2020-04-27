@@ -1,0 +1,17 @@
+*{margin: 0; padding: 0; font-family: 'Gothic A1', sans-serif; color: darkslategrey;}
+li{list-style: none;}
+
+/*--------------------------------------------------------------------------------------점프메뉴*/
+#skipNav{position:relative; width:100%; overflow:hidden;}
+#skipNav a{display:block; height:1px; margin-bottom:-1px; overflow:hidden; text-align:center; text-decoration:none; color:#fff; font-size:12px;}
+#skipNav a:hover, #skipNav a:focus, #skipNav a:active{display:block;height:auto;padding:5px 0; background-color: tomato;} 
+
+.hidden{position: absolute; display: block; width: 1px; height: 1px; overflow: hidden; color: transparent; text-indent: -1000%; top: 0;}
+
+/*--------------------------------------------------------------------------------------섹션*/
+#wrap{width: 100%; margin: 0 auto;}
+
+/*--------------------------------------------------------------------------------------헤더*/
+header .topLogin{width: 1200px; height: 40px; overflow: hidden; position: absolute; left: 50%; margin-left: -600px;}
+header .topLogin div{position: absolute; right: 0; overflow: hidden;}
+header .topLogin div a{display: block; padding: 10px 0 10px 20px; float: left; text-decoration: none; color: #fff;}

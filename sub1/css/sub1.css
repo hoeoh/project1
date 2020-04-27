@@ -1,0 +1,20 @@
+/*--------------------------------------------------------------------------------------헤더*/
+        header{width: 1200px; position: fixed; left: 50%; margin-left: -600px; background-color: black; z-index: 20;}
+        .logo> a{display: block; width: 150px; height: 70px; background: url(../images/lottelogow.png); background-size: contain; background-position: center; background-repeat: no-repeat; overflow: hidden; text-indent: -1000%; float: left;}
+        
+        #gnb{overflow: hidden; height: 70px; width: 720px;  float: right; transition-duration: 0.5s;}
+        #gnb a{text-decoration: none; color: #fff; line-height: 40px; font-weight: 300;}
+        
+        .menu{width: 720px; height: 40px; margin: 0 auto; position: absolute; overflow: hidden; margin-top: 15px; transition-duration: 0.5s;}
+        .menu> li{width: 120px; float: left; text-align: center; position: relative;}
+        
+        /*--------------------------------------------------------------------------------------섹션*/
+        #wrap{width: 100%; height: 2000px; margin: 0 auto; position: absolute;}
+        #content{position: relative; margin: 120px auto 0;}
+        /*--------------------------------------------------------------------------------------본문*/
+        .location{width: 1200px; height: 50px; margin: 0 auto; overflow: hidden}
+        .location ul{float: right; padding: 20px;}
+        .location ul li{float: left; margin-left: 12px; padding-left: 16px; background: url(images/location.png) no-repeat 0 50%; font-size: 13px;}
+        .location a{text-decoration: none;}
+        .location .first{margin-left: 0; padding-left: 0; background: none;}
+        .location .last>a{color: tomato;}

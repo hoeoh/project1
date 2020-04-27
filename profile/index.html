@@ -1,0 +1,249 @@
+<!DOCTYPE html >
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/fullpage.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/examples.css">
+	<link rel="stylesheet" href="css/style3.css" >
+<!--   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>-->
+<!--    <script src="js/jquery-1.8.3.min.js"></script>-->
+    <script src="js/jquery-1.9.1.min.js"></script>
+    <script src="js/jquery-migrate-1.4.1.min.js"></script>
+<!--    <script src="js/scrolloverflow.js"></script>-->
+    <script src="js/fullpage.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/typer.js"></script>
+    <script src="js/nav.js"></script>
+    <title>이신회의 포트폴리오</title>
+    <script>
+        $(document).ready(function(){            
+            $('#fullpage').fullpage({
+                menu: '#menu',
+                anchors: ['firstPage', 'secondPage', '3rdPage', '4thPage', '5thPage', '6thPage', '7thPage','8thPage'],
+                sectionsColor: ['rosybrown', '#D9BFBE', '#122E53', '#CCD5DA', '#ad0016','#C0CBC0'],
+              //  scrollBar: false,
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['First', 'Second', 'Third', '4th', '5th', '6th', '7th','8th'],
+                slidesNavigation: true,
+              // scrollOverflow: true
+            });
+        });
+    </script>
+     <script>
+        window.onload=function(){	
+            var el       = document.querySelector('.main-text')
+            var options  = {
+            text: '안 녕 하 세 요 \n 웹 - 퍼 블 리 셔 \n 이 신 회 입 니 다.' ,
+            textSpeed: 95,
+            blinkSpeed: 0.06 //커서깜빡임 속도
+        }
+
+        var instance = new tinytyper(el, options);
+
+    }
+    </script>
+</head>
+<body class="fix">  
+  <header>
+       <h1>
+           <a href="#firstPage">
+<!--                <img src="img/logo.png" alt="로고">-->
+           </a>
+       </h1>
+       <a class="menuOpen" href=""><i class="fa fa-bars"></i><span class="hidden">메뉴열기</span></a>
+        <ul id="menu">
+            <li data-menuanchor="firstPage"  class="active">
+                <a href="#firstPage">Home</a>
+            </li>
+            <li data-menuanchor="secondPage">
+                <a href="#secondPage">Profile</a>
+            </li>
+            <li data-menuanchor="3rdPage">
+                <a href="#3rdPage">PC web</a>
+            </li>
+            <li data-menuanchor="4thPage">
+                <a href="#4thPage">Mobile web</a>
+            </li>
+            <li data-menuanchor="5thPage">
+                <a href="#5thPage">Responsive web</a>
+            </li>
+             <li data-menuanchor="6thPage">
+                <a href="#6thPage">Wordpress</a>
+            </li>
+        </ul>
+    </header>
+    <div id="fullpage">
+        <div class="section container-fluid" id="section0">
+            <div class="homeWrap row">
+               
+                <div class="homeText col-xs-5 col-sm-4 col-md-4">
+<!--
+                    <div class="name">
+                        <h2>Lee Sinhoe</h2>
+                        <p>WEB PUBLISHER</p>
+                    </div>
+-->
+                    <div class="main-text"></div>
+                    <div><img src="img/home_img.jpg" alt=""></div>
+                </div>
+                <div class="faceWrap col-xs-7 col-sm-8 col-md-8">
+                   
+                </div>
+            </div>
+            
+        </div>
+        <div class="section" id="section1">
+            <div class="slide" id="slide1">
+                <div class="profileWrap">
+                    
+                    
+                        <div class="profileText">
+                            <h2>이 신 회</h2>
+                            <span class="eName">Web Publisher</span>
+                            
+                            <dl>
+                                <dt>Birth.</dt>
+                                <dd>1994.12.28</dd>
+                                <dt>Email.</dt>
+                                <dd>h0e0h@naver.com</dd>
+                            </dl>
+                            <dl>
+                                <dt>Skills(Develop)</dt>
+                                <dd>HTML5, CSS3, JavaScript, jQuery, Ajax, php(include)</dd>
+                            </dl>
+                            <dl>
+                                <dt>Skills(Design)</dt>
+                                <dd>Adobe Photoshop, Illustrator</dd>
+                            </dl>
+                        </div>
+                        <div class="profileImgWrap">
+                            <img src="images/g/profile.jpg" alt="">
+                            <div class="downPort">
+                                <a href="images/storyboard.pdf">DOWNLOAD PORTFOLIO</a>
+                            </div>
+                        </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        
+        <!---------------------------------------기업형-------->
+        <div class="section" id="section2">
+           <div class="pcText text">
+              <h2>롯데컬처웍스 <strong>desktop</strong><br>웹 사이트 제작</h2>
+              <p>사이트 기획의도 : 기존 웹사이트의 산만한 Interface,<br>Image Alt 누락으로 인한 접근성 부재를 문제점으로 삼아<br> 트렌드에 맞는 UI와 웹 표준을 지향하는 마크업으로 <br>접근성을 고려하여 새롭게 구축하였습니다</p>
+              <div class="timeSkill skill">
+                  <dl>
+                      <dt>제작기간</dt>
+                      <dd>2019. 11. 14 ~ 12. 13 (약 4주)</dd>
+                  </dl>
+                  <dl>
+                      <dt>제작스킬</dt>
+                      <dd>Adobe Photoshop, Illustrator</dd>
+                      <dd>HTML5/CSS3, Javascript, jQuery, Ajax(Json), php(in clude), 그누보드(게시판)</dd>
+                      <dd>W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 크로스브라우징 완료</dd>
+                  </dl>
+              </div>
+              <div class="pcSite site"><a href="http://hoeoh.cafe24.com/" target="_blank">view site</a></div>
+            </div>
+            <div class="pcWrap wrap">
+              <img src="images/pc.png" alt="">
+            </div>
+        </div>
+        
+        <!---------------------------------------모바일-------->
+        <div id="section3" class="section">
+            <div class="mobileText text grayText">
+               
+               <h2>롯데컬처웍스 <strong>mobile</strong><br>웹 사이트 제작</h2>
+              <p>사이트 기획의도 : 메인화면에서 사용자가 원하는 경험을 중심으로<br>퀵메뉴를 구분하고, 컨텐츠의 기능과 성격에 맞춰<br>위계를 재정렬한 모바일 버전입니다.</p>
+              <div class="timeSkill skill graySkill">
+                  <dl>
+                      <dt>제작기간</dt>
+                      <dd>2019. 12. 17 ~ 01. 05 (약 2주)</dd>
+                  </dl>
+                  <dl>
+                      <dt>제작스킬</dt>
+                      <dd>Adobe Photoshop, Illustrator</dd>
+                      <dd>HTML5/CSS3, Javascript, jQuery, Ajax, php(include)</dd>
+                      <dd>CSS3(media query)와 스크립트를 이용한 기기별 해상도 서비스</dd>
+                      <dd>W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 대표 기기별 테스트 완료</dd>
+                  </dl>
+              </div>
+              <div class="mobileSite site"><a href="http://hoeoh.cafe24.com/mobile" target="_blank">view site</a></div>
+                
+            </div>
+            <div class="mobileWrap wrap">
+              <img src="images/mobile.gif" alt="">
+            </div>
+            <div class="QRMobile">
+                   <img src="images/mobileQR.jpg" alt="">
+               </div>
+        </div>
+        
+        <!---------------------------------------반응형-------->
+        <div id="section4" class="section">
+            <div class="responsiveText text">
+               <h2>Miu Miu <strong>Responsive</strong><br>웹 사이트 제작</h2>
+              <p>사이트 기획의도 : 브랜드 "MIU MIU"를 주제로 한 사이트로써,<br>다양한 디바이스에서 폭 넓게 이용할 수 있도록<br>반응형 웹을 구축하였습니다.</p>
+              <div class="timeSkill skill">
+                  <dl>
+                      <dt>제작기간</dt>
+                      <dd>2020. 04. 10 ~ 04. 18 (약 1주)</dd>
+                  </dl>
+                  <dl>
+                      <dt>제작스킬</dt>
+                      <dd>Adobe Photoshop, Illustrator</dd>
+                      <dd>HTML5/CSS3, Javascript, jQuery, Ajax(Json), php(in clude), 그누보드(게시판)</dd>
+                      <dd>CSS3(media query)와 스크립트를 이용한 디바이스/해상도별 반응형 UI 구현</dd>
+                      <dd>W3C 웹표준 마크업 검사, 웹접근성검사(K-WAH), 대표 기기별 테스트 완료</dd>
+                  </dl>
+              </div>
+                <div class="QRMobile"><img src="img/QRCodeImg_media.jpg" alt=""></div>
+              <div class="responsiveSite site"><a href="http://hoeoh.cafe24.com/media" target="_blank">view site</a></div>
+                
+            </div>
+            <div class="responsiveWrap wrap">
+                <div class="responsivePad">
+                  <img src="images/res.png" alt="">
+                </div>
+                <div class="responsivePc">
+                  <img src="images/pc.png" alt="">
+                  <img src="images/res_mobile.gif" alt="">
+                </div>
+            </div>
+        </div>
+        
+        <!---------------------------------------워드프레스-------->
+        <div id="section5" class="section">
+            <div class="wpText text grayText">
+               <h2>David Hockney <strong>wordpress</strong><br>웹 사이트 제작</h2>
+              <p>사이트 기획의도 : 평소 관심있던 주제를 워드프레스 사이트에 접목해서<br>컨셉을 잡고 디자인을 해보고싶어 진행했습니다.</p>
+              <div class="timeSkill skill graySkill">
+                  <dl>
+                      <dt>제작기간</dt>
+                      <dd>2020. 04. 19 ~ 04. 22 (약 4일)</dd>
+                  </dl>
+                  <dl>
+                      <dt>제작스킬</dt>
+                      <dd>Adobe Photoshop, Illustrator</dd>
+                      <dd>HTML5/CSS3</dd>
+                      <dd>wordpress 이용한 웹사이트 구현</dd>
+                      
+                  </dl>
+              </div>
+              <div class="wpSite site"><a href="http://hoeoh/dothome.co.kr/wp" target="_blank">view site</a></div>
+            </div>
+           <div class="wpWrap wrap">
+                <img src="images/wp.png" alt="">
+                </div>
+        </div>
+    </div>
+</body>
+</html>

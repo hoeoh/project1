@@ -1,0 +1,91 @@
+<?
+	session_start();
+    @extract($_GET); 
+    @extract($_POST); 
+    @extract($_SESSION);  
+?>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>회사소개</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Gothic+A1:100,200,300,400,500,600,700,800,900&display=swap&subset=korean" rel="stylesheet">
+    <link rel="stylesheet" href="../common/css/common.css">
+    <link rel="stylesheet" href="css/sub1.css">
+
+</head>
+<body>
+    <div id="skipNav">
+       <a href="#content">본문 바로가기</a>
+       <a href="#gnb">글로벌네비게이션 바로가기</a>
+   </div>
+
+   <div id="wrap">
+   <!-----------------------------------------헤더-->
+ <? include "../common/header.html" ?>
+<!--
+   <header>
+       <h1 class="logo"><a href="#">롯데컬쳐웍스</a></h1>
+       <span></span>
+        <nav id="gnb">
+         <h2 class="hidden">네비영역</h2>
+            <ul class="menu">
+                <li><h3><a href="#">회사소개</a></h3>
+                    <ul class="depth2">
+                        <li><a href="#">회사개요</a></li>
+                        <li><a href="#">인사말</a></li>
+                        <li><a href="#">연혁</a></li>
+                        <li><a href="#">지배구조</a></li>
+                        <li><a href="#">수상실적</a></li>
+                        <li><a href="#">찾아오시는 길</a></li>
+                    </ul>
+                </li>
+                <li><h3><a href="#">사업분야</a></h3>
+                    <ul class="depth2">
+                        <li><a href="#">롯데시네마</a></li>
+                        <li><a href="#">롯데엔터테인먼트</a></li>
+                    </ul></li>
+                <li><h3><a href="#">사회공헌</a></h3>
+                    <ul class="depth2">
+                        <li><a href="#">행복한 나눔</a></li>
+                        <li><a href="#">나눔현장</a></li>
+                    </ul>
+                </li>
+                <li><h3><a href="#">홍보센터</a></h3></li>
+                <li><h3><a href="#">광고/임대문의</a></h3></li>
+                <li><h3><a href="#">인재채용</a></h3>
+                    <ul class="depth2">
+                        <li><a href="#">채용안내</a></li>
+                        <li><a href="#">채용공고</a></li>
+                        <li><a href="#">합격자발표</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+</header>
+-->
+    
+    <div id="content">
+        <h2 class="hidden">본문영역</h2>
+        <!-----------------------------------------로케이션-->
+            <div class="location">
+                <ul>
+                    <li class="first"><a href="#">홈</a></li>
+                    <li><a href="#">회사소개</a></li>
+                    <li class="last"><a href="#">찾아오시는 길</a></li>
+                </ul>
+            </div>
+        
+        <h3>찾아오시는 길</h3>
+        <!-----------------------------------------사업분야-->  
+            <ul class="business">
+                <li class="cinema"></li>
+                <li class="enter"></li>
+            </ul>
+    </div>
+    <!-----------------------------------------푸터-->
+    <? include "../common/footer.html" ?>
+    
+    </div>
+</body>
+</html>

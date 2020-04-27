@@ -1,0 +1,5 @@
+.nav{margin:10px;}
+.movie{margin:0 auto; width:935px; height:101px; overflow:hidden;}  
+.movie > ul{overflow:hidden;height:101px; width:1200px}
+.movie > ul > li{ float:left; display:block; width: 77.5px;}   
+.movie > ul > li > img{ width:100%; margin-right:10px;}

@@ -1,0 +1,128 @@
+* {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+#content .intro h3{text-align: center; color: #fff; font-size: 40px; padding: 180px 0 30px 0; position: relative;}
+#content .intro p{color: #fff; position: relative; text-align: center; padding-bottom: 50px; font-family: gothic A1; font-size: 20px; width: 70%; left: 50%; margin-left: -35%;}
+#content .intro p b{font-family: chonburi; font-size: 25px; line-height: 23px;}
+#content .intro .show{background-image: url(../images/collection/stage.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; width: 90%; height: 400px; margin: 0 auto; }
+#content .intro ul{width: 90%; margin: 0 auto; color: #fff; font-family: gothic A1; font-size: 16px; overflow: hidden; }
+#content .intro ul li{text-align: justify; width: 31.33%; margin-top: 3%; float: left}
+#content .intro ul li:nth-of-type(2){margin: 3% 3% 0;}
+
+.wrap {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  -webkit-perspective: 2500px;
+  perspective: 2500px;
+  -webkit-perspective-origin: 100% 50%;
+  perspective-origin: 100% 50%;
+}
+
+.wrap h4 {
+  left: 10%;
+  color: #fff;
+  font-size: 40px;
+  top: 20%;
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+    
+}
+.wrap .list {
+  width: 80%;
+  height: 150vh;
+  overflow-x: hidden;
+  webkit-transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+  transform: rotateX(35deg) rotateY(3deg) rotateZ(27deg);
+  margin: 0 0 0 200px;
+  padding: 150px 100px 500px 0;
+  scrollbar-width: none;
+}
+.wrap .list::-webkit-scrollbar {
+  display: none;
+}
+.wrap .list::-webkit-scrollbar {
+  display: none;
+}
+.wrap .list::-webkit-scrollbar {
+  display: block;
+}
+.wrap .list .item {
+/*  filter: grayscale(100%);*/
+  width: 30%;
+  height: 400px;
+  margin: 20px;
+  display: inline-block;
+  position: relative;
+}
+.wrap .list .item::after {
+  content: '';
+  position: absolute;
+  z-index: 150;
+  width: 100%;
+  top: 0px;
+  left: -0px;
+  height: 100%;
+  background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3960c8e1-d90e-4e60-8522-816b41b93892/d84vq6v-5985a860-c6c3-453c-a0ae-e80e5e5abf06.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzM5NjBjOGUxLWQ5MGUtNGU2MC04NTIyLTgxNmI0MWI5Mzg5MlwvZDg0dnE2di01OTg1YTg2MC1jNmMzLTQ1M2MtYTBhZS1lODBlNWU1YWJmMDYucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.G2ljZtN3fPs4NhvF-fCGxl_97BA4w8kvt_qGyJH1RNI");
+  opacity: .1;
+}
+.wrap .list .item .img {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 1px 1px 50px 0 #000;
+  -webkit-transform-origin: 100% 50%;
+  -ms-transform-origin: 100% 50%;
+  transform-origin: 100% 50%;
+  z-index: 10;
+  position: relative;
+}
+
+.wrap button {display: none;}
+
+    .swiper-container {width: 100%; height: 400px; position: relative;}
+.swiper-wrapper {height: 100%;}
+    .swiper-slide {background-size: cover; background-position: center; height: 100%;}
+    .gallery-top {height: 400px; width: 100%;}
+    .gallery-thumbs {
+      height: 20%;
+      box-sizing: border-box;
+      padding: 10px 0;
+    }
+    .gallery-thumbs .swiper-slide {
+      height: 100%;
+      opacity: 0.4;
+    }
+    .gallery-thumbs .swiper-slide-thumb-active {
+      opacity: 1;
+    }
+
+#footerArea{width: auto !important;}
+
+@media only screen and (max-width: 1024px) {
+    #content .intro ul li{width: 100%;}
+    #content .intro ul li:nth-of-type(2),#content .intro ul li:last-of-type{display: none;}
+    
+}
+@media only screen and (max-width: 768px) {
+    .wrap .list .item{width: 50%;}
+    #content .intro h3,.wrap h4{font-size: 30px;}
+    #content .intro p{font-size: 16px; width: 90%; margin-left: -45%}
+    #content .intro p b{font-size: 20px;}
+    #content .intro ul li{font-size: 14px;}
+    #content .intro .show{height: 300px;}
+}
+@media only screen and (max-width: 480px) and (min-height: 320px) {
+    #content .intro h3,.wrap h4{font-size: 25px;}
+    .wrap .list{margin: 0 0 0 150px; transform: none;}
+    .wrap .list .item{width: 100%; z-index: -1;}
+    #content .intro p{font-size: 14px;}
+    #content .intro p b{line-height: 13px}
+    #content .intro .show{height: 200px;}
+}
+
